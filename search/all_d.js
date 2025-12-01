@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['user_0',['user',['../dc/dbf/classuser_1_1User.html',1,'user.User'],['../dc/d44/namespaceuser.html',1,'user'],['../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee',1,'vote.Vote.user']]],
-  ['user_2epy_1',['user.py',['../d0/d3f/user_8py.html',1,'']]],
-  ['user_5fid_2',['user_id',['../dc/dbf/classuser_1_1User.html#a4d019a764f5ca2cd1bb1f347d482d163',1,'user::User']]]
+  ['value_0',['value',['../dd/d55/classcard_1_1Card.html#a3544fdad614ad107c55d27d9a11ee118',1,'card::Card']]],
+  ['vote_1',['vote',['../db/d53/classvote_1_1Vote.html',1,'vote.Vote'],['../dd/d52/namespacevote.html',1,'vote']]],
+  ['vote_2epy_2',['vote.py',['../d3/d9e/vote_8py.html',1,'']]],
+  ['votes_3',['votes',['../d4/d24/classstory_1_1Story.html#af2625e11b2d27da2944f3c56a583198e',1,'story::Story']]]
 ];
