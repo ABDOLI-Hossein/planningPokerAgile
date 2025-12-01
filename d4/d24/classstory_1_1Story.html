@@ -77,7 +77,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../db/d39/classstory_1_1Story-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">story.Story Class Reference</div></div>
 </div><!--header-->
@@ -85,12 +84,21 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a7cc2169fa11cef71d587375a97630d5d" id="r_a7cc2169fa11cef71d587375a97630d5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d24/classstory_1_1Story.html#a7cc2169fa11cef71d587375a97630d5d">__init__</a> (self, <a class="el" href="../../d4/d24/classstory_1_1Story.html#a959f0d9739d94248fbf42d99ea3a33dc">story_id</a>, <a class="el" href="../../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4">title</a>, <a class="el" href="../../d4/d24/classstory_1_1Story.html#a096f8ad63160300d2718866a61589d57">description</a>=&quot;&quot;)</td></tr>
+<tr class="memdesc:a7cc2169fa11cef71d587375a97630d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la User Story.  <br /></td></tr>
+<tr class="separator:a7cc2169fa11cef71d587375a97630d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d162d2c3c48dcd511ba53b5630ea7b5" id="r_a1d162d2c3c48dcd511ba53b5630ea7b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d24/classstory_1_1Story.html#a1d162d2c3c48dcd511ba53b5630ea7b5">add_vote</a> (self, vote)</td></tr>
 <tr class="memdesc:a1d162d2c3c48dcd511ba53b5630ea7b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un vote à cette User Story.  <br /></td></tr>
 <tr class="separator:a1d162d2c3c48dcd511ba53b5630ea7b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d5dc74ecee7d42b800aa0690e30ec64" id="r_a9d5dc74ecee7d42b800aa0690e30ec64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d24/classstory_1_1Story.html#a9d5dc74ecee7d42b800aa0690e30ec64">get_votes</a> (self)</td></tr>
+<tr class="memdesc:a9d5dc74ecee7d42b800aa0690e30ec64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne la liste des votes.  <br /></td></tr>
+<tr class="separator:a9d5dc74ecee7d42b800aa0690e30ec64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61ea39e174d4e82ad4a04030db880323" id="r_a61ea39e174d4e82ad4a04030db880323"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d24/classstory_1_1Story.html#a61ea39e174d4e82ad4a04030db880323">calculate_estimation</a> (self)</td></tr>
-<tr class="memdesc:a61ea39e174d4e82ad4a04030db880323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule l'estimation finale (simple moyenne).  <br /></td></tr>
+<tr class="memdesc:a61ea39e174d4e82ad4a04030db880323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule l'estimation finale par moyenne des votes numériques.  <br /></td></tr>
 <tr class="separator:a61ea39e174d4e82ad4a04030db880323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c7fd30297b9da94c5312f74a7689a3" id="r_af3c7fd30297b9da94c5312f74a7689a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d24/classstory_1_1Story.html#af3c7fd30297b9da94c5312f74a7689a3">__str__</a> (self)</td></tr>
+<tr class="memdesc:af3c7fd30297b9da94c5312f74a7689a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Représentation textuelle de la story.  <br /></td></tr>
+<tr class="separator:af3c7fd30297b9da94c5312f74a7689a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -104,28 +112,19 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af2625e11b2d27da2944f3c56a583198e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7251e99e6adc0498c062d3640082e6f" id="r_af7251e99e6adc0498c062d3640082e6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d24/classstory_1_1Story.html#af7251e99e6adc0498c062d3640082e6f">final_estimation</a></td></tr>
 <tr class="separator:af7251e99e6adc0498c062d3640082e6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a6ca7fed36769e72764d824f6f60393e7" id="r_a6ca7fed36769e72764d824f6f60393e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d24/classstory_1_1Story.html#a6ca7fed36769e72764d824f6f60393e7">_init_</a> (self, <a class="el" href="../../d4/d24/classstory_1_1Story.html#a959f0d9739d94248fbf42d99ea3a33dc">story_id</a>, <a class="el" href="../../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4">title</a>, <a class="el" href="../../d4/d24/classstory_1_1Story.html#a096f8ad63160300d2718866a61589d57">description</a>=&quot;&quot;)</td></tr>
-<tr class="memdesc:a6ca7fed36769e72764d824f6f60393e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la User Story.  <br /></td></tr>
-<tr class="separator:a6ca7fed36769e72764d824f6f60393e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00007">7</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6ca7fed36769e72764d824f6f60393e7" name="a6ca7fed36769e72764d824f6f60393e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ca7fed36769e72764d824f6f60393e7">&#9670;&#160;</a></span>_init_()</h2>
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00008">8</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a7cc2169fa11cef71d587375a97630d5d" name="a7cc2169fa11cef71d587375a97630d5d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cc2169fa11cef71d587375a97630d5d">&#9670;&#160;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">story.Story._init_ </td>
+          <td class="memname">story.Story.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -154,11 +153,6 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructeur de la User Story. </p>
@@ -166,19 +160,45 @@ Protected Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">story_id</td><td>Identifiant de la story. </td></tr>
     <tr><td class="paramname">title</td><td>Titre court de la story. </td></tr>
-    <tr><td class="paramname">description</td><td>Description de la story. </td></tr>
+    <tr><td class="paramname">description</td><td>Description détaillée (optionnelle). </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00013">13</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>    <span class="keyword">def </span>_init_(self, story_id, title, description=&quot;&quot;):</div>
-<div class="line"><span class="lineno">   14</span>        self.story_id = story_id</div>
-<div class="line"><span class="lineno">   15</span>        self.title = title</div>
-<div class="line"><span class="lineno">   16</span>        self.description = description</div>
-<div class="line"><span class="lineno">   17</span>        self.votes = []</div>
-<div class="line"><span class="lineno">   18</span>        self.final_estimation = <span class="keywordtype">None</span></div>
-<div class="line"><span class="lineno">   19</span> </div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00014">14</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>    <span class="keyword">def </span>__init__(self, story_id, title, description=&quot;&quot;):</div>
+<div class="line"><span class="lineno">   15</span>        self.story_id = story_id</div>
+<div class="line"><span class="lineno">   16</span>        self.title = title</div>
+<div class="line"><span class="lineno">   17</span>        self.description = description</div>
+<div class="line"><span class="lineno">   18</span>        self.votes = []  <span class="comment"># List[Vote]</span></div>
+<div class="line"><span class="lineno">   19</span>        self.final_estimation = <span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">   20</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="af3c7fd30297b9da94c5312f74a7689a3" name="af3c7fd30297b9da94c5312f74a7689a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3c7fd30297b9da94c5312f74a7689a3">&#9670;&#160;</a></span>__str__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">story.Story.__str__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Représentation textuelle de la story. </p>
+<dl class="section return"><dt>Returns</dt><dd>Chaîne descriptive. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00058">58</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>    <span class="keyword">def </span>__str__(self):</div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">return</span> f<span class="stringliteral">&quot;Story(id={self.story_id}, title=&#39;{self.title}&#39;)&quot;</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -216,10 +236,17 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00023">23</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>    <span class="keyword">def </span>add_vote(self, vote):</div>
-<div class="line"><span class="lineno">   24</span>        self.votes.append(vote)</div>
-<div class="line"><span class="lineno">   25</span> </div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00024">24</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>    <span class="keyword">def </span>add_vote(self, vote):</div>
+<div class="line"><span class="lineno">   25</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> isinstance(vote, Vote):</div>
+<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">raise</span> TypeError(<span class="stringliteral">&quot;add_vote attend un objet Vote&quot;</span>)</div>
+<div class="line"><span class="lineno">   27</span>        <span class="comment"># remplacer vote si l&#39;utilisateur a déjà voté</span></div>
+<div class="line"><span class="lineno">   28</span>        <span class="keywordflow">for</span> i, v <span class="keywordflow">in</span> enumerate(self.votes):</div>
+<div class="line"><span class="lineno">   29</span>            <span class="keywordflow">if</span> v.get_user().get_id() == vote.get_user().get_id():</div>
+<div class="line"><span class="lineno">   30</span>                self.votes[i] = vote</div>
+<div class="line"><span class="lineno">   31</span>                <span class="keywordflow">return</span></div>
+<div class="line"><span class="lineno">   32</span>        self.votes.append(vote)</div>
+<div class="line"><span class="lineno">   33</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -239,19 +266,48 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calcule l'estimation finale (simple moyenne). </p>
-<dl class="section return"><dt>Returns</dt><dd>L'estimation calculée. </dd></dl>
+<p>Calcule l'estimation finale par moyenne des votes numériques. </p>
+<dl class="section return"><dt>Returns</dt><dd>estimation calculée (float) ou "Indeterminée" si aucun vote numérique. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00029">29</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   29</span>    <span class="keyword">def </span>calculate_estimation(self):</div>
-<div class="line"><span class="lineno">   30</span>        numeric_votes = [v.card.value <span class="keywordflow">for</span> v <span class="keywordflow">in</span> self.votes <span class="keywordflow">if</span> isinstance(v.card.value, int)]</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">if</span> len(numeric_votes) == 0:</div>
-<div class="line"><span class="lineno">   33</span>            self.final_estimation = <span class="stringliteral">&quot;Indeterminée&quot;</span></div>
-<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">else</span>:</div>
-<div class="line"><span class="lineno">   35</span>            self.final_estimation = sum(numeric_votes) / len(numeric_votes)</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">return</span> self.final_estimation</div>
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00043">43</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>    <span class="keyword">def </span>calculate_estimation(self):</div>
+<div class="line"><span class="lineno">   44</span>        numeric_votes = []</div>
+<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">for</span> v <span class="keywordflow">in</span> self.votes:</div>
+<div class="line"><span class="lineno">   46</span>            val = v.get_card().get_value()</div>
+<div class="line"><span class="lineno">   47</span>            <span class="keywordflow">if</span> isinstance(val, (int, float)):</div>
+<div class="line"><span class="lineno">   48</span>                numeric_votes.append(val)</div>
+<div class="line"><span class="lineno">   49</span>        <span class="keywordflow">if</span> len(numeric_votes) == 0:</div>
+<div class="line"><span class="lineno">   50</span>            self.final_estimation = <span class="stringliteral">&quot;Indeterminée&quot;</span></div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">   52</span>            self.final_estimation = sum(numeric_votes) / len(numeric_votes)</div>
+<div class="line"><span class="lineno">   53</span>        <span class="keywordflow">return</span> self.final_estimation</div>
+<div class="line"><span class="lineno">   54</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a9d5dc74ecee7d42b800aa0690e30ec64" name="a9d5dc74ecee7d42b800aa0690e30ec64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d5dc74ecee7d42b800aa0690e30ec64">&#9670;&#160;</a></span>get_votes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">story.Story.get_votes </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retourne la liste des votes. </p>
+<dl class="section return"><dt>Returns</dt><dd>liste d'objets Vote. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00037">37</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>    <span class="keyword">def </span>get_votes(self):</div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">return</span> self.votes</div>
+<div class="line"><span class="lineno">   39</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -268,7 +324,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00016">16</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00017">17</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
 
 </div>
 </div>
@@ -284,7 +340,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00018">18</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00019">19</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
 
 </div>
 </div>
@@ -300,7 +356,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00014">14</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00015">15</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
 
 </div>
 </div>
@@ -316,7 +372,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00015">15</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00016">16</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
 
 </div>
 </div>
@@ -332,7 +388,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00017">17</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../dc/d7b/story_8py_source.html#l00018">18</a> of file <a class="el" href="../../dc/d7b/story_8py_source.html">story.py</a>.</p>
 
 </div>
 </div>
@@ -342,7 +398,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2025 13:44:01 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Mon Dec 1 2025 13:44:20 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
