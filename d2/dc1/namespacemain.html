@@ -78,19 +78,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3140e9a5b6a71ffbf498198cfc471b88" id="r_a3140e9a5b6a71ffbf498198cfc471b88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc1/namespacemain.html#a3140e9a5b6a71ffbf498198cfc471b88">main</a> ()</td></tr>
-<tr class="memdesc:a3140e9a5b6a71ffbf498198cfc471b88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction principale de démonstration.  <br /></td></tr>
-<tr class="separator:a3140e9a5b6a71ffbf498198cfc471b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6baff27adc141e720841caf845eddc65" id="r_a6baff27adc141e720841caf845eddc65"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc1/namespacemain.html#a6baff27adc141e720841caf845eddc65">demo</a> ()</td></tr>
+<tr class="separator:a6baff27adc141e720841caf845eddc65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a3140e9a5b6a71ffbf498198cfc471b88" name="a3140e9a5b6a71ffbf498198cfc471b88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3140e9a5b6a71ffbf498198cfc471b88">&#9670;&#160;</a></span>main()</h2>
+<a id="a6baff27adc141e720841caf845eddc65" name="a6baff27adc141e720841caf845eddc65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6baff27adc141e720841caf845eddc65">&#9670;&#160;</a></span>demo()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">main.main </td>
+          <td class="memname">main.demo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -98,42 +97,64 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Fonction principale de démonstration. </p>
-
 <p class="definition">Definition at line <a class="el" href="../../dc/dba/main_8py_source.html#l00013">13</a> of file <a class="el" href="../../dc/dba/main_8py_source.html">main.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span><span class="keyword">def </span><a class="code hl_namespace" href="../../d2/dc1/namespacemain.html">main</a>():</div>
-<div class="line"><span class="lineno">   14</span> </div>
+<div class="fragment"><div class="line"><span class="lineno">   13</span><span class="keyword">def </span>demo():</div>
+<div class="line"><span class="lineno">   14</span>    <span class="comment"># Création de la session</span></div>
 <div class="line"><span class="lineno">   15</span>    session = Session(<span class="stringliteral">&quot;S001&quot;</span>)</div>
 <div class="line"><span class="lineno">   16</span> </div>
-<div class="line"><span class="lineno">   17</span>    <span class="comment"># Création des utilisateurs</span></div>
+<div class="line"><span class="lineno">   17</span>    <span class="comment"># Utilisateurs</span></div>
 <div class="line"><span class="lineno">   18</span>    u1 = User(1, <span class="stringliteral">&quot;Alice&quot;</span>)</div>
 <div class="line"><span class="lineno">   19</span>    u2 = User(2, <span class="stringliteral">&quot;Bob&quot;</span>)</div>
-<div class="line"><span class="lineno">   20</span>    sm = User(99, <span class="stringliteral">&quot;ScrumMaster&quot;</span>, <span class="stringliteral">&quot;SCRUM_MASTER&quot;</span>)</div>
+<div class="line"><span class="lineno">   20</span>    sm = User(99, <span class="stringliteral">&quot;Eve&quot;</span>, <span class="stringliteral">&quot;SCRUM_MASTER&quot;</span>)</div>
 <div class="line"><span class="lineno">   21</span> </div>
 <div class="line"><span class="lineno">   22</span>    session.add_player(u1)</div>
 <div class="line"><span class="lineno">   23</span>    session.add_player(u2)</div>
 <div class="line"><span class="lineno">   24</span>    session.add_player(sm)</div>
 <div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>    <span class="comment"># User story</span></div>
-<div class="line"><span class="lineno">   27</span>    story = Story(10, <span class="stringliteral">&quot;Créer API login&quot;</span>, <span class="stringliteral">&quot;Permettre l&#39;authentification&quot;</span>)</div>
-<div class="line"><span class="lineno">   28</span>    session.add_story(story)</div>
-<div class="line"><span class="lineno">   29</span>    session.start_voting(story)</div>
-<div class="line"><span class="lineno">   30</span> </div>
-<div class="line"><span class="lineno">   31</span>    <span class="comment"># Votes</span></div>
-<div class="line"><span class="lineno">   32</span>    story.add_vote(Vote(u1, Card(5)))</div>
-<div class="line"><span class="lineno">   33</span>    story.add_vote(Vote(u2, Card(8)))</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>    estimation = session.end_voting()</div>
-<div class="line"><span class="lineno">   36</span>    print(<span class="stringliteral">&quot;Estimation finale :&quot;</span>, estimation)</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="ttc" id="anamespacemain_html"><div class="ttname"><a href="../../d2/dc1/namespacemain.html">main</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/dba/main_8py_source.html#l00001">main.py:1</a></div></div>
-</div><!-- fragment -->
+<div class="line"><span class="lineno">   26</span>    <span class="comment"># Deck par défaut (non utilisé directement ici mais disponible)</span></div>
+<div class="line"><span class="lineno">   27</span>    deck = Deck.default_deck()</div>
+<div class="line"><span class="lineno">   28</span>    print(deck)</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    <span class="comment"># Création d&#39;une story</span></div>
+<div class="line"><span class="lineno">   31</span>    story = Story(10, <span class="stringliteral">&quot;Créer API login&quot;</span>, <span class="stringliteral">&quot;Permettre l&#39;authentification des utilisateurs&quot;</span>)</div>
+<div class="line"><span class="lineno">   32</span>    session.add_story(story)</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>    <span class="comment"># Lancer le vote pour la story</span></div>
+<div class="line"><span class="lineno">   35</span>    session.start_voting(story)</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment"># Les joueurs votent (exemple)</span></div>
+<div class="line"><span class="lineno">   38</span>    session.cast_vote(Vote(u1, Card(5)))</div>
+<div class="line"><span class="lineno">   39</span>    session.cast_vote(Vote(u2, Card(8)))</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>    <span class="comment"># Fin du vote et estimation</span></div>
+<div class="line"><span class="lineno">   42</span>    estimation = session.end_voting()</div>
+<div class="line"><span class="lineno">   43</span>    print(<span class="stringliteral">&quot;Estimation finale pour la story:&quot;</span>, estimation)</div>
+<div class="line"><span class="lineno">   44</span> </div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dc1/namespacemain_a6baff27adc141e720841caf845eddc65_cgraph.png" border="0" usemap="#ad2/dc1/namespacemain_a6baff27adc141e720841caf845eddc65_cgraph" alt=""/></div>
+<map name="ad2/dc1/namespacemain_a6baff27adc141e720841caf845eddc65_cgraph" id="ad2/dc1/namespacemain_a6baff27adc141e720841caf845eddc65_cgraph">
+<area shape="rect" title=" " alt="" coords="5,29,101,55"/>
+<area shape="poly" title=" " alt="" coords="36,30,33,21,35,12,42,5,53,3,67,6,73,15,69,18,64,11,53,8,44,10,39,14,38,20,41,28"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d2/dc1/namespacemain_a6baff27adc141e720841caf845eddc65_icgraph.png" border="0" usemap="#ad2/dc1/namespacemain_a6baff27adc141e720841caf845eddc65_icgraph" alt=""/></div>
+<map name="ad2/dc1/namespacemain_a6baff27adc141e720841caf845eddc65_icgraph" id="ad2/dc1/namespacemain_a6baff27adc141e720841caf845eddc65_icgraph">
+<area shape="rect" title=" " alt="" coords="5,29,101,55"/>
+<area shape="poly" title=" " alt="" coords="69,18,64,11,53,8,44,10,39,14,38,20,41,28,36,30,33,21,35,12,42,5,53,3,67,6,73,15"/>
+</map>
+</div>
+
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2025 13:44:49 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Mon Dec 1 2025 13:45:10 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

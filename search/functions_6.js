@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../d2/dc1/namespacemain.html#a3140e9a5b6a71ffbf498198cfc471b88',1,'main']]]
+  ['start_5fvoting_0',['start_voting',['../dc/dd0/classsession_1_1Session.html#a5f6b38c08b572e3c1a8ff1a6a57b5624',1,'session::Session']]]
 ];

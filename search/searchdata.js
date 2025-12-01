@@ -4,7 +4,7 @@ var indexSectionsWithContent =
   1: "cdsuv",
   2: "cdmsuv",
   3: "cdmsuv",
-  4: "_acdegms",
+  4: "_acdegs",
   5: "cdfnprstuv"
 };
 
