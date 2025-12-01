@@ -84,15 +84,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7517dc72546512daffe265a7b23da4f9" id="r_a7517dc72546512daffe265a7b23da4f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classcard_1_1Card.html#a7517dc72546512daffe265a7b23da4f9">__init__</a> (self, <a class="el" href="../../dd/d55/classcard_1_1Card.html#a3544fdad614ad107c55d27d9a11ee118">value</a>)</td></tr>
-<tr class="memdesc:a7517dc72546512daffe265a7b23da4f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur d'une carte.  <br /></td></tr>
-<tr class="separator:a7517dc72546512daffe265a7b23da4f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a019a12240977575ecc468f2bc39cdaf8" id="r_a019a12240977575ecc468f2bc39cdaf8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classcard_1_1Card.html#a019a12240977575ecc468f2bc39cdaf8">get_value</a> (self)</td></tr>
-<tr class="memdesc:a019a12240977575ecc468f2bc39cdaf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retourne la valeur de la carte.  <br /></td></tr>
-<tr class="separator:a019a12240977575ecc468f2bc39cdaf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a762324fbf3886478edadec4123b93a66" id="r_a762324fbf3886478edadec4123b93a66"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classcard_1_1Card.html#a762324fbf3886478edadec4123b93a66">__str__</a> (self)</td></tr>
-<tr class="memdesc:a762324fbf3886478edadec4123b93a66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Représentation textuelle.  <br /></td></tr>
-<tr class="separator:a762324fbf3886478edadec4123b93a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a473242900f5b249fe8289b4a2abd2b0f" id="r_a473242900f5b249fe8289b4a2abd2b0f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classcard_1_1Card.html#a473242900f5b249fe8289b4a2abd2b0f">__init__</a> (self, str <a class="el" href="../../dd/d55/classcard_1_1Card.html#a3544fdad614ad107c55d27d9a11ee118">value</a>)</td></tr>
+<tr class="separator:a473242900f5b249fe8289b4a2abd2b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a431b2b3fa036098fc78854be76b6b259" id="r_a431b2b3fa036098fc78854be76b6b259"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d55/classcard_1_1Card.html#a431b2b3fa036098fc78854be76b6b259">get_value</a> (self)</td></tr>
+<tr class="separator:a431b2b3fa036098fc78854be76b6b259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -100,11 +95,13 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3544fdad614ad107c55d27d9a11ee118"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
+<div class="textblock"><pre class="fragment">@class Card
+@brief Planning Poker card (1,2,3,5,8,...,?)
+</pre> 
 <p class="definition">Definition at line <a class="el" href="../../de/db6/card_8py_source.html#l00006">6</a> of file <a class="el" href="../../de/db6/card_8py_source.html">card.py</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7517dc72546512daffe265a7b23da4f9" name="a7517dc72546512daffe265a7b23da4f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7517dc72546512daffe265a7b23da4f9">&#9670;&#160;</a></span>__init__()</h2>
+<a id="a473242900f5b249fe8289b4a2abd2b0f" name="a473242900f5b249fe8289b4a2abd2b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a473242900f5b249fe8289b4a2abd2b0f">&#9670;&#160;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,7 +115,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">&#160;</td>
+          <td class="paramtype">str&#160;</td>
           <td class="paramname"><em>value</em>&#160;</td>
         </tr>
         <tr>
@@ -128,31 +125,27 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Constructeur d'une carte. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>Valeur numérique ou symbole de la carte (ex: 1, 2, 3, 5, 8, "?", "☕"). </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../de/db6/card_8py_source.html#l00010">10</a> of file <a class="el" href="../../de/db6/card_8py_source.html">card.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>    <span class="keyword">def </span>__init__(self, value):</div>
-<div class="line"><span class="lineno">   11</span>        self.value = value</div>
-<div class="line"><span class="lineno">   12</span> </div>
+<pre class="fragment">@param value Card value
+</pre> 
+<p class="definition">Definition at line <a class="el" href="../../de/db6/card_8py_source.html#l00012">12</a> of file <a class="el" href="../../de/db6/card_8py_source.html">card.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>    <span class="keyword">def </span>__init__(self, value: str):</div>
+<div class="line"><span class="lineno">   13</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   14</span><span class="stringliteral">        @param value Card value</span></div>
+<div class="line"><span class="lineno">   15</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   16</span>        self.value = value</div>
+<div class="line"><span class="lineno">   17</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a762324fbf3886478edadec4123b93a66" name="a762324fbf3886478edadec4123b93a66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a762324fbf3886478edadec4123b93a66">&#9670;&#160;</a></span>__str__()</h2>
+<a id="a431b2b3fa036098fc78854be76b6b259" name="a431b2b3fa036098fc78854be76b6b259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431b2b3fa036098fc78854be76b6b259">&#9670;&#160;</a></span>get_value()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">card.Card.__str__ </td>
+          <td class="memname"> str card.Card.get_value </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em></td><td>)</td>
@@ -160,39 +153,14 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Représentation textuelle. </p>
-<dl class="section return"><dt>Returns</dt><dd>Chaîne représentant la carte. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../de/db6/card_8py_source.html#l00022">22</a> of file <a class="el" href="../../de/db6/card_8py_source.html">card.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>    <span class="keyword">def </span>__str__(self):</div>
-<div class="line"><span class="lineno">   23</span>        <span class="keywordflow">return</span> f<span class="stringliteral">&quot;Card({self.value})&quot;</span></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a019a12240977575ecc468f2bc39cdaf8" name="a019a12240977575ecc468f2bc39cdaf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a019a12240977575ecc468f2bc39cdaf8">&#9670;&#160;</a></span>get_value()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">card.Card.get_value </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>self</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Retourne la valeur de la carte. </p>
-<dl class="section return"><dt>Returns</dt><dd>Valeur (int ou str). </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="../../de/db6/card_8py_source.html#l00016">16</a> of file <a class="el" href="../../de/db6/card_8py_source.html">card.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>    <span class="keyword">def </span>get_value(self):</div>
-<div class="line"><span class="lineno">   17</span>        <span class="keywordflow">return</span> self.value</div>
-<div class="line"><span class="lineno">   18</span> </div>
+<pre class="fragment">@return the card value
+</pre> 
+<p class="definition">Definition at line <a class="el" href="../../de/db6/card_8py_source.html#l00018">18</a> of file <a class="el" href="../../de/db6/card_8py_source.html">card.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>    <span class="keyword">def </span>get_value(self) -&gt; str:</div>
+<div class="line"><span class="lineno">   19</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   20</span><span class="stringliteral">        @return the card value</span></div>
+<div class="line"><span class="lineno">   21</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">return</span> self.value</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -209,7 +177,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/db6/card_8py_source.html#l00011">11</a> of file <a class="el" href="../../de/db6/card_8py_source.html">card.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../de/db6/card_8py_source.html#l00016">16</a> of file <a class="el" href="../../de/db6/card_8py_source.html">card.py</a>.</p>
 
 </div>
 </div>
@@ -219,7 +187,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2025 13:57:54 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Mon Dec 1 2025 13:59:07 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
