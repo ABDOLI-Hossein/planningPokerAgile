@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_0',['user',['../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee',1,'vote::Vote']]]
+  ['value_0',['value',['../dd/d55/classcard_1_1Card.html#a3544fdad614ad107c55d27d9a11ee118',1,'card::Card']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_0',['name',['../dc/dbf/classuser_1_1User.html#a6e2628c16e9626fc48d9ab9d2db506df',1,'user::User']]]
+  ['players_0',['players',['../dc/dd0/classsession_1_1Session.html#a25fcd6a8657e35a2079b522349c65f4c',1,'session::Session']]]
 ];

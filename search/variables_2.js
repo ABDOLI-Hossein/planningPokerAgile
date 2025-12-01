@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['final_5festimation_0',['final_estimation',['../d4/d24/classstory_1_1Story.html#af7251e99e6adc0498c062d3640082e6f',1,'story::Story']]]
+  ['name_0',['name',['../dc/dbf/classuser_1_1User.html#a6e2628c16e9626fc48d9ab9d2db506df',1,'user::User']]]
 ];

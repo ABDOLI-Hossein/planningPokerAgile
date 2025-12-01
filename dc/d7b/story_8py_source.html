@@ -78,92 +78,54 @@ $(document).ready(function() { init_codefold(1); });
   <div class="headertitle"><div class="title">story.py</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../dc/d7b/story_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="../../d6/d23/namespacestory.html">    1</a></span><span class="comment">##</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"># @file story.py</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"># @brief Représente une User Story à estimer dans une session Planning Poker.</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"># @version 1.0</span></div>
+<a href="../../dc/d7b/story_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="../../d6/d23/namespacestory.html">    1</a></span><span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="stringliteral">@file story.py</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="stringliteral">@brief Defines a story/feature to estimate.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">from</span> vote <span class="keyword">import</span> Vote</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="" data-end="">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d4/d24/classstory_1_1Story.html">Story</a>:</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="comment">##</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">    # @brief Constructeur de la User Story.</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">    # @param story_id Identifiant de la story.</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">    # @param title Titre court de la story.</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">    # @param description Description détaillée (optionnelle).</span></div>
-<div class="foldopen" id="foldopen00014" data-start="" data-end="">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a7cc2169fa11cef71d587375a97630d5d">   14</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../d4/d24/classstory_1_1Story.html#a7cc2169fa11cef71d587375a97630d5d">__init__</a>(self, story_id, title, description=&quot;&quot;):</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a959f0d9739d94248fbf42d99ea3a33dc">   15</a></span>        self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#a959f0d9739d94248fbf42d99ea3a33dc">story_id</a> = story_id</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4">   16</a></span>        self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4">title</a> = title</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a096f8ad63160300d2718866a61589d57">   17</a></span>        self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#a096f8ad63160300d2718866a61589d57">description</a> = description</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#af2625e11b2d27da2944f3c56a583198e">   18</a></span>        self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#af2625e11b2d27da2944f3c56a583198e">votes</a> = []  <span class="comment"># List[Vote]</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#af7251e99e6adc0498c062d3640082e6f">   19</a></span>        self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#af7251e99e6adc0498c062d3640082e6f">final_estimation</a> = <span class="keywordtype">None</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00006" data-start="" data-end="">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d4/d24/classstory_1_1Story.html">Story</a>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="stringliteral">    @class Story</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="stringliteral">    @brief A task or feature to estimate.</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="stringliteral">    &quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="" data-end="">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a6da72f4078e0a1d593ac71d2a5e78389">   12</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../d4/d24/classstory_1_1Story.html#a6da72f4078e0a1d593ac71d2a5e78389">__init__</a>(self, title: str, description: str = <span class="stringliteral">&quot;&quot;</span>):</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="stringliteral">        @param title Story title</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="stringliteral">        @param description Story description</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4">   17</a></span>        self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4">title</a> = title</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a096f8ad63160300d2718866a61589d57">   18</a></span>        self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#a096f8ad63160300d2718866a61589d57">description</a> = description</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">##</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">    # @brief Ajoute un vote à cette User Story.</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">    # @param vote Objet Vote à ajouter.</span></div>
-<div class="foldopen" id="foldopen00024" data-start="" data-end="">
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a1d162d2c3c48dcd511ba53b5630ea7b5">   24</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../d4/d24/classstory_1_1Story.html#a1d162d2c3c48dcd511ba53b5630ea7b5">add_vote</a>(self, vote):</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> isinstance(vote, Vote):</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            <span class="keywordflow">raise</span> TypeError(<span class="stringliteral">&quot;add_vote attend un objet Vote&quot;</span>)</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="comment"># remplacer vote si l&#39;utilisateur a déjà voté</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">for</span> i, v <span class="keywordflow">in</span> enumerate(self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#af2625e11b2d27da2944f3c56a583198e">votes</a>):</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">if</span> v.get_user().get_id() == vote.get_user().get_id():</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#af2625e11b2d27da2944f3c56a583198e">votes</a>[i] = vote</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                <span class="keywordflow">return</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#af2625e11b2d27da2944f3c56a583198e">votes</a>.append(vote)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="" data-end="">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a5c4028274efd6082d09ca9b57e62df6d">   20</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../d4/d24/classstory_1_1Story.html#a5c4028274efd6082d09ca9b57e62df6d">get_title</a>(self):</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="stringliteral">        @return Story title</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">return</span> self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4">title</a></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">##</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">    # @brief Retourne la liste des votes.</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="comment">    # @return liste d&#39;objets Vote.</span></div>
-<div class="foldopen" id="foldopen00037" data-start="" data-end="">
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a9d5dc74ecee7d42b800aa0690e30ec64">   37</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../d4/d24/classstory_1_1Story.html#a9d5dc74ecee7d42b800aa0690e30ec64">get_votes</a>(self):</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">return</span> self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#af2625e11b2d27da2944f3c56a583198e">votes</a></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">##</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="comment">    # @brief Calcule l&#39;estimation finale par moyenne des votes numériques.</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="comment">    # @return estimation calculée (float) ou &quot;Indeterminée&quot; si aucun vote numérique.</span></div>
-<div class="foldopen" id="foldopen00043" data-start="" data-end="">
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a61ea39e174d4e82ad4a04030db880323">   43</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../d4/d24/classstory_1_1Story.html#a61ea39e174d4e82ad4a04030db880323">calculate_estimation</a>(self):</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        numeric_votes = []</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">for</span> v <span class="keywordflow">in</span> self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#af2625e11b2d27da2944f3c56a583198e">votes</a>:</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            val = v.get_card().get_value()</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>            <span class="keywordflow">if</span> isinstance(val, (int, float)):</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                numeric_votes.append(val)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        <span class="keywordflow">if</span> len(numeric_votes) == 0:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#af7251e99e6adc0498c062d3640082e6f">final_estimation</a> = <span class="stringliteral">&quot;Indeterminée&quot;</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">else</span>:</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#af7251e99e6adc0498c062d3640082e6f">final_estimation</a> = sum(numeric_votes) / len(numeric_votes)</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        <span class="keywordflow">return</span> self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#af7251e99e6adc0498c062d3640082e6f">final_estimation</a></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">##</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="comment">    # @brief Représentation textuelle de la story.</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="comment">    # @return Chaîne descriptive.</span></div>
-<div class="foldopen" id="foldopen00058" data-start="" data-end="">
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#af3c7fd30297b9da94c5312f74a7689a3">   58</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../d4/d24/classstory_1_1Story.html#af3c7fd30297b9da94c5312f74a7689a3">__str__</a>(self):</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> f<span class="stringliteral">&quot;Story(id={self.story_id}, title=&#39;{self.title}&#39;)&quot;</span></div>
+<div class="foldopen" id="foldopen00026" data-start="" data-end="">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d4/d24/classstory_1_1Story.html#a2f04c8d2066c6f09ffbcda43e538f857">   26</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../d4/d24/classstory_1_1Story.html#a2f04c8d2066c6f09ffbcda43e538f857">get_description</a>(self):</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="stringliteral">        @return Story description</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="stringliteral">        &quot;&quot;&quot;</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        <span class="keywordflow">return</span> self.<a class="code hl_variable" href="../../d4/d24/classstory_1_1Story.html#a096f8ad63160300d2718866a61589d57">description</a></div>
 </div>
 </div>
-<div class="ttc" id="aclassstory_1_1Story_html"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html">story.Story</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00008">story.py:8</a></div></div>
-<div class="ttc" id="aclassstory_1_1Story_html_a096f8ad63160300d2718866a61589d57"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a096f8ad63160300d2718866a61589d57">story.Story.description</a></div><div class="ttdeci">description</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00017">story.py:17</a></div></div>
-<div class="ttc" id="aclassstory_1_1Story_html_a1d162d2c3c48dcd511ba53b5630ea7b5"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a1d162d2c3c48dcd511ba53b5630ea7b5">story.Story.add_vote</a></div><div class="ttdeci">add_vote(self, vote)</div><div class="ttdoc">Ajoute un vote à cette User Story.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00024">story.py:24</a></div></div>
-<div class="ttc" id="aclassstory_1_1Story_html_a61ea39e174d4e82ad4a04030db880323"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a61ea39e174d4e82ad4a04030db880323">story.Story.calculate_estimation</a></div><div class="ttdeci">calculate_estimation(self)</div><div class="ttdoc">Calcule l'estimation finale par moyenne des votes numériques.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00043">story.py:43</a></div></div>
-<div class="ttc" id="aclassstory_1_1Story_html_a7cc2169fa11cef71d587375a97630d5d"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a7cc2169fa11cef71d587375a97630d5d">story.Story.__init__</a></div><div class="ttdeci">__init__(self, story_id, title, description=&quot;&quot;)</div><div class="ttdoc">Constructeur de la User Story.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00014">story.py:14</a></div></div>
-<div class="ttc" id="aclassstory_1_1Story_html_a959f0d9739d94248fbf42d99ea3a33dc"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a959f0d9739d94248fbf42d99ea3a33dc">story.Story.story_id</a></div><div class="ttdeci">story_id</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00015">story.py:15</a></div></div>
-<div class="ttc" id="aclassstory_1_1Story_html_a9d5dc74ecee7d42b800aa0690e30ec64"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a9d5dc74ecee7d42b800aa0690e30ec64">story.Story.get_votes</a></div><div class="ttdeci">get_votes(self)</div><div class="ttdoc">Retourne la liste des votes.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00037">story.py:37</a></div></div>
-<div class="ttc" id="aclassstory_1_1Story_html_a9eb3038eaf1dbfd5ccebd7e5b351d1e4"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4">story.Story.title</a></div><div class="ttdeci">title</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00016">story.py:16</a></div></div>
-<div class="ttc" id="aclassstory_1_1Story_html_af2625e11b2d27da2944f3c56a583198e"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#af2625e11b2d27da2944f3c56a583198e">story.Story.votes</a></div><div class="ttdeci">votes</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00018">story.py:18</a></div></div>
-<div class="ttc" id="aclassstory_1_1Story_html_af3c7fd30297b9da94c5312f74a7689a3"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#af3c7fd30297b9da94c5312f74a7689a3">story.Story.__str__</a></div><div class="ttdeci">__str__(self)</div><div class="ttdoc">Représentation textuelle de la story.</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00058">story.py:58</a></div></div>
-<div class="ttc" id="aclassstory_1_1Story_html_af7251e99e6adc0498c062d3640082e6f"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#af7251e99e6adc0498c062d3640082e6f">story.Story.final_estimation</a></div><div class="ttdeci">final_estimation</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00019">story.py:19</a></div></div>
+<div class="ttc" id="aclassstory_1_1Story_html"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html">story.Story</a></div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00006">story.py:6</a></div></div>
+<div class="ttc" id="aclassstory_1_1Story_html_a096f8ad63160300d2718866a61589d57"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a096f8ad63160300d2718866a61589d57">story.Story.description</a></div><div class="ttdeci">description</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00018">story.py:18</a></div></div>
+<div class="ttc" id="aclassstory_1_1Story_html_a2f04c8d2066c6f09ffbcda43e538f857"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a2f04c8d2066c6f09ffbcda43e538f857">story.Story.get_description</a></div><div class="ttdeci">get_description(self)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00026">story.py:26</a></div></div>
+<div class="ttc" id="aclassstory_1_1Story_html_a5c4028274efd6082d09ca9b57e62df6d"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a5c4028274efd6082d09ca9b57e62df6d">story.Story.get_title</a></div><div class="ttdeci">get_title(self)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00020">story.py:20</a></div></div>
+<div class="ttc" id="aclassstory_1_1Story_html_a6da72f4078e0a1d593ac71d2a5e78389"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a6da72f4078e0a1d593ac71d2a5e78389">story.Story.__init__</a></div><div class="ttdeci">__init__(self, str title, str description=&quot;&quot;)</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00012">story.py:12</a></div></div>
+<div class="ttc" id="aclassstory_1_1Story_html_a9eb3038eaf1dbfd5ccebd7e5b351d1e4"><div class="ttname"><a href="../../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4">story.Story.title</a></div><div class="ttdeci">title</div><div class="ttdef"><b>Definition</b> <a href="../../dc/d7b/story_8py_source.html#l00017">story.py:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2025 13:59:32 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Mon Dec 1 2025 13:59:55 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>

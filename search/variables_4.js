@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['players_0',['players',['../dc/dd0/classsession_1_1Session.html#a25fcd6a8657e35a2079b522349c65f4c',1,'session::Session']]]
+  ['scrum_5fmaster_0',['scrum_master',['../dc/dd0/classsession_1_1Session.html#a508af9e958672d13446a0b714182da73',1,'session::Session']]],
+  ['session_5fid_1',['session_id',['../dc/dd0/classsession_1_1Session.html#aa4c1596018d56da2b38b522694857cd8',1,'session::Session']]],
+  ['stories_2',['stories',['../dc/dd0/classsession_1_1Session.html#af6c88e85560acf1e5ad977943d3469f8',1,'session::Session']]]
 ];

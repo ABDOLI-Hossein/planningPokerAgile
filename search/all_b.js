@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['title_0',['title',['../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4',1,'story::Story']]]
+  ['user_0',['user',['../dc/dbf/classuser_1_1User.html',1,'user.User'],['../dc/d44/namespaceuser.html',1,'user'],['../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee',1,'vote.Vote.user']]],
+  ['user_2epy_1',['user.py',['../d0/d3f/user_8py.html',1,'']]]
 ];
