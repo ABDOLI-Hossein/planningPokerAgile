@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['user_0',['user',['../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee',1,'vote::Vote']]],
-  ['users_1',['users',['../dc/dd0/classsession_1_1Session.html#a90b24b1c13fcaeb45b7e8752fa933e64',1,'session::Session']]]
+  ['root_0',['root',['../d5/d2b/classUI_1_1PlanningPokerUI.html#ad0c6fb1a9489eef82899652c156cf012',1,'UI.PlanningPokerUI.root'],['../d6/d56/namespaceUI.html#aecbb38b44344d3c1d0066a1c9dcf600b',1,'UI.root']]]
 ];

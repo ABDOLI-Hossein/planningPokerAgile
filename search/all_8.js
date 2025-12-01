@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['title_0',['title',['../d4/d24/classstory_1_1Story.html#a9eb3038eaf1dbfd5ccebd7e5b351d1e4',1,'story::Story']]]
+  ['root_0',['root',['../d5/d2b/classUI_1_1PlanningPokerUI.html#ad0c6fb1a9489eef82899652c156cf012',1,'UI.PlanningPokerUI.root'],['../d6/d56/namespaceUI.html#aecbb38b44344d3c1d0066a1c9dcf600b',1,'UI.root']]]
 ];
