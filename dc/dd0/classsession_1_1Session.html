@@ -77,7 +77,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="../../de/d70/classsession_1_1Session-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">session.Session Class Reference</div></div>
 </div><!--header-->
@@ -85,18 +84,27 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a865c37c7d0a53f86493a13603259e248" id="r_a865c37c7d0a53f86493a13603259e248"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd0/classsession_1_1Session.html#a865c37c7d0a53f86493a13603259e248">__init__</a> (self, <a class="el" href="../../dc/dd0/classsession_1_1Session.html#aa4c1596018d56da2b38b522694857cd8">session_id</a>)</td></tr>
+<tr class="memdesc:a865c37c7d0a53f86493a13603259e248"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la session Planning Poker.  <br /></td></tr>
+<tr class="separator:a865c37c7d0a53f86493a13603259e248"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0d2281b78bbd409e816cce8bb9faecf" id="r_ae0d2281b78bbd409e816cce8bb9faecf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd0/classsession_1_1Session.html#ae0d2281b78bbd409e816cce8bb9faecf">add_player</a> (self, user)</td></tr>
 <tr class="memdesc:ae0d2281b78bbd409e816cce8bb9faecf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un joueur à la session.  <br /></td></tr>
 <tr class="separator:ae0d2281b78bbd409e816cce8bb9faecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a538db99103ca797eb612993855dcd7fc" id="r_a538db99103ca797eb612993855dcd7fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd0/classsession_1_1Session.html#a538db99103ca797eb612993855dcd7fc">add_story</a> (self, story)</td></tr>
-<tr class="memdesc:a538db99103ca797eb612993855dcd7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute une User Story à estimer.  <br /></td></tr>
+<tr class="memdesc:a538db99103ca797eb612993855dcd7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute une User Story à la session.  <br /></td></tr>
 <tr class="separator:a538db99103ca797eb612993855dcd7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f6b38c08b572e3c1a8ff1a6a57b5624" id="r_a5f6b38c08b572e3c1a8ff1a6a57b5624"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd0/classsession_1_1Session.html#a5f6b38c08b572e3c1a8ff1a6a57b5624">start_voting</a> (self, story)</td></tr>
-<tr class="memdesc:a5f6b38c08b572e3c1a8ff1a6a57b5624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Démarre la phase de vote pour une Story donnée.  <br /></td></tr>
+<tr class="memdesc:a5f6b38c08b572e3c1a8ff1a6a57b5624"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sélectionne une story pour démarrer le vote.  <br /></td></tr>
 <tr class="separator:a5f6b38c08b572e3c1a8ff1a6a57b5624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a457f7c110677e11ef0996a1e1aac81ce" id="r_a457f7c110677e11ef0996a1e1aac81ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd0/classsession_1_1Session.html#a457f7c110677e11ef0996a1e1aac81ce">cast_vote</a> (self, vote)</td></tr>
+<tr class="memdesc:a457f7c110677e11ef0996a1e1aac81ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ajoute un vote à la story courante.  <br /></td></tr>
+<tr class="separator:a457f7c110677e11ef0996a1e1aac81ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49fec075f57858cfa0d755df76cfbd4d" id="r_a49fec075f57858cfa0d755df76cfbd4d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd0/classsession_1_1Session.html#a49fec075f57858cfa0d755df76cfbd4d">end_voting</a> (self)</td></tr>
-<tr class="memdesc:a49fec075f57858cfa0d755df76cfbd4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Termine la session de vote et calcule une estimation finale.  <br /></td></tr>
+<tr class="memdesc:a49fec075f57858cfa0d755df76cfbd4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Termine le vote pour la story courante et calcule l'estimation finale.  <br /></td></tr>
 <tr class="separator:a49fec075f57858cfa0d755df76cfbd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3848a48a7191d795b846aa93c168237" id="r_ab3848a48a7191d795b846aa93c168237"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd0/classsession_1_1Session.html#ab3848a48a7191d795b846aa93c168237">__str__</a> (self)</td></tr>
+<tr class="memdesc:ab3848a48a7191d795b846aa93c168237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Représentation textuelle de la session.  <br /></td></tr>
+<tr class="separator:ab3848a48a7191d795b846aa93c168237"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -110,28 +118,19 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af6c88e85560acf1e5ad977943d3469f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01213211c249e56b555bb8cfc2c3a366" id="r_a01213211c249e56b555bb8cfc2c3a366"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd0/classsession_1_1Session.html#a01213211c249e56b555bb8cfc2c3a366">current_story</a></td></tr>
 <tr class="separator:a01213211c249e56b555bb8cfc2c3a366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:ab640f501f07835fb098773dbb9264868" id="r_ab640f501f07835fb098773dbb9264868"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd0/classsession_1_1Session.html#ab640f501f07835fb098773dbb9264868">_init_</a> (self, <a class="el" href="../../dc/dd0/classsession_1_1Session.html#aa4c1596018d56da2b38b522694857cd8">session_id</a>)</td></tr>
-<tr class="memdesc:ab640f501f07835fb098773dbb9264868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur de la session Planning Poker.  <br /></td></tr>
-<tr class="separator:ab640f501f07835fb098773dbb9264868"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00009">9</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab640f501f07835fb098773dbb9264868" name="ab640f501f07835fb098773dbb9264868"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab640f501f07835fb098773dbb9264868">&#9670;&#160;</a></span>_init_()</h2>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00010">10</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a865c37c7d0a53f86493a13603259e248" name="a865c37c7d0a53f86493a13603259e248"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a865c37c7d0a53f86493a13603259e248">&#9670;&#160;</a></span>__init__()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">session.Session._init_ </td>
+          <td class="memname">session.Session.__init__ </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>self</em>, </td>
@@ -148,11 +147,6 @@ Protected Member Functions</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Constructeur de la session Planning Poker. </p>
@@ -163,14 +157,40 @@ Protected Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00013">13</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>    <span class="keyword">def </span>_init_(self, session_id):</div>
-<div class="line"><span class="lineno">   14</span>        self.session_id = session_id</div>
-<div class="line"><span class="lineno">   15</span>        self.players = []</div>
-<div class="line"><span class="lineno">   16</span>        self.scrum_master = <span class="keywordtype">None</span></div>
-<div class="line"><span class="lineno">   17</span>        self.stories = []</div>
-<div class="line"><span class="lineno">   18</span>        self.current_story = <span class="keywordtype">None</span></div>
-<div class="line"><span class="lineno">   19</span> </div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00014">14</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>    <span class="keyword">def </span>__init__(self, session_id):</div>
+<div class="line"><span class="lineno">   15</span>        self.session_id = session_id</div>
+<div class="line"><span class="lineno">   16</span>        self.players = []       <span class="comment"># liste d&#39;objets User (players)</span></div>
+<div class="line"><span class="lineno">   17</span>        self.scrum_master = <span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">   18</span>        self.stories = []       <span class="comment"># liste d&#39;objets Story</span></div>
+<div class="line"><span class="lineno">   19</span>        self.current_story = <span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">   20</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab3848a48a7191d795b846aa93c168237" name="ab3848a48a7191d795b846aa93c168237"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3848a48a7191d795b846aa93c168237">&#9670;&#160;</a></span>__str__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">session.Session.__str__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Représentation textuelle de la session. </p>
+<dl class="section return"><dt>Returns</dt><dd>Chaîne descriptive. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00071">71</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>    <span class="keyword">def </span>__str__(self):</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">return</span> f<span class="stringliteral">&quot;Session(id={self.session_id}, players={len(self.players)}, stories={len(self.stories)})&quot;</span></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -203,18 +223,22 @@ Protected Member Functions</h2></td></tr>
 <p>Ajoute un joueur à la session. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">user</td><td>Joueur à ajouter. </td></tr>
+    <tr><td class="paramname">user</td><td>Instance de User. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00023">23</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>    <span class="keyword">def </span>add_player(self, user):</div>
-<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">if</span> user.role == <span class="stringliteral">&quot;SCRUM_MASTER&quot;</span>:</div>
-<div class="line"><span class="lineno">   25</span>            self.scrum_master = user</div>
-<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">else</span>:</div>
-<div class="line"><span class="lineno">   27</span>            self.players.append(user)</div>
-<div class="line"><span class="lineno">   28</span> </div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00024">24</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>    <span class="keyword">def </span>add_player(self, user):</div>
+<div class="line"><span class="lineno">   25</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> isinstance(user, User):</div>
+<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">raise</span> TypeError(<span class="stringliteral">&quot;add_player attend un User&quot;</span>)</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">if</span> user.get_role() == <span class="stringliteral">&quot;SCRUM_MASTER&quot;</span>:</div>
+<div class="line"><span class="lineno">   28</span>            self.scrum_master = user</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">   30</span>            <span class="comment"># éviter les doublons</span></div>
+<div class="line"><span class="lineno">   31</span>            <span class="keywordflow">if</span> all(p.get_id() != user.get_id() <span class="keywordflow">for</span> p <span class="keywordflow">in</span> self.players):</div>
+<div class="line"><span class="lineno">   32</span>                self.players.append(user)</div>
+<div class="line"><span class="lineno">   33</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -244,18 +268,63 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Ajoute une User Story à estimer. </p>
+<p>Ajoute une User Story à la session. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">story</td><td>Story à ajouter. </td></tr>
+    <tr><td class="paramname">story</td><td>Instance de Story. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00032">32</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   32</span>    <span class="keyword">def </span>add_story(self, story):</div>
-<div class="line"><span class="lineno">   33</span>        self.stories.append(story)</div>
-<div class="line"><span class="lineno">   34</span> </div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00037">37</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>    <span class="keyword">def </span>add_story(self, story):</div>
+<div class="line"><span class="lineno">   38</span>        <span class="keywordflow">if</span> <span class="keywordflow">not</span> isinstance(story, Story):</div>
+<div class="line"><span class="lineno">   39</span>            <span class="keywordflow">raise</span> TypeError(<span class="stringliteral">&quot;add_story attend un Story&quot;</span>)</div>
+<div class="line"><span class="lineno">   40</span>        self.stories.append(story)</div>
+<div class="line"><span class="lineno">   41</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a457f7c110677e11ef0996a1e1aac81ce" name="a457f7c110677e11ef0996a1e1aac81ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a457f7c110677e11ef0996a1e1aac81ce">&#9670;&#160;</a></span>cast_vote()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">session.Session.cast_vote </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>vote</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ajoute un vote à la story courante. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vote</td><td>Instance de Vote. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00053">53</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   53</span>    <span class="keyword">def </span>cast_vote(self, vote):</div>
+<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">if</span> self.current_story <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">   55</span>            <span class="keywordflow">raise</span> RuntimeError(<span class="stringliteral">&quot;Aucune story en cours de vote&quot;</span>)</div>
+<div class="line"><span class="lineno">   56</span>        self.current_story.add_vote(vote)</div>
+<div class="line"><span class="lineno">   57</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -275,13 +344,17 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Termine la session de vote et calcule une estimation finale. </p>
-<dl class="section return"><dt>Returns</dt><dd>Estimation finale calculée. </dd></dl>
+<p>Termine le vote pour la story courante et calcule l'estimation finale. </p>
+<dl class="section return"><dt>Returns</dt><dd>estimation finale calculée. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00044">44</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>    <span class="keyword">def </span>end_voting(self):</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">if</span> self.current_story:</div>
-<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">return</span> self.current_story.calculate_estimation()</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00061">61</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>    <span class="keyword">def </span>end_voting(self):</div>
+<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">if</span> self.current_story <span class="keywordflow">is</span> <span class="keywordtype">None</span>:</div>
+<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">return</span> <span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">   64</span>        estimation = self.current_story.calculate_estimation()</div>
+<div class="line"><span class="lineno">   65</span>        self.current_story = <span class="keywordtype">None</span></div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">return</span> estimation</div>
+<div class="line"><span class="lineno">   67</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -311,18 +384,20 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Démarre la phase de vote pour une Story donnée. </p>
+<p>Sélectionne une story pour démarrer le vote. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">story</td><td>La story sélectionnée. </td></tr>
+    <tr><td class="paramname">story</td><td>Instance de Story. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00038">38</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>    <span class="keyword">def </span>start_voting(self, story):</div>
-<div class="line"><span class="lineno">   39</span>        self.current_story = story</div>
-<div class="line"><span class="lineno">   40</span> </div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00045">45</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   45</span>    <span class="keyword">def </span>start_voting(self, story):</div>
+<div class="line"><span class="lineno">   46</span>        <span class="keywordflow">if</span> story <span class="keywordflow">not</span> <span class="keywordflow">in</span> self.stories:</div>
+<div class="line"><span class="lineno">   47</span>            <span class="keywordflow">raise</span> ValueError(<span class="stringliteral">&quot;La story doit être ajoutée à la session avant de lancer le vote&quot;</span>)</div>
+<div class="line"><span class="lineno">   48</span>        self.current_story = story</div>
+<div class="line"><span class="lineno">   49</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -339,7 +414,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00018">18</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00019">19</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
 
 </div>
 </div>
@@ -355,7 +430,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00015">15</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00016">16</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
 
 </div>
 </div>
@@ -371,7 +446,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00016">16</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00017">17</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
 
 </div>
 </div>
@@ -387,7 +462,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00014">14</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00015">15</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
 
 </div>
 </div>
@@ -403,7 +478,7 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00017">17</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d45/session_8py_source.html#l00018">18</a> of file <a class="el" href="../../d2/d45/session_8py_source.html">session.py</a>.</p>
 
 </div>
 </div>
@@ -413,7 +488,7 @@ Protected Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2025 13:44:20 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Mon Dec 1 2025 13:44:49 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
