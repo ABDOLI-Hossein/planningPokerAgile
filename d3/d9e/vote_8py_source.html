@@ -80,28 +80,56 @@ $(document).ready(function() { init_codefold(1); });
 <div class="contents">
 <a href="../../d3/d9e/vote_8py.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="../../dd/d52/namespacevote.html">    1</a></span><span class="comment">##</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment"># @file vote.py</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"># @brief Contient la classe Vote, représentant le vote d&#39;un joueur.</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="foldopen" id="foldopen00005" data-start="" data-end="">
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html">    5</a></span><span class="keyword">class </span><a class="code hl_class" href="../../db/d53/classvote_1_1Vote.html">Vote</a>:</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">##</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">    # @brief Constructeur d&#39;un vote.</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">    # @param user Joueur qui vote.</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">    # @param card Carte choisie par le joueur.</span></div>
-<div class="foldopen" id="foldopen00010" data-start="" data-end="">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html#aa1fac581041236831d274ecfae626b37">   10</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../db/d53/classvote_1_1Vote.html#aa1fac581041236831d274ecfae626b37">_init_</a>(self, user, card):</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee">   11</a></span>        self.<a class="code hl_variable" href="../../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee">user</a> = user</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html#a1ba164fa904a1faed51a0d935d7d2dad">   12</a></span>        self.<a class="code hl_variable" href="../../db/d53/classvote_1_1Vote.html#a1ba164fa904a1faed51a0d935d7d2dad">card</a> = card</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"># @brief Contient la classe Vote, représentant le vote d&#39;un joueur pour une story.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"># @version 1.0</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="foldopen" id="foldopen00006" data-start="" data-end="">
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="../../db/d53/classvote_1_1Vote.html">Vote</a>:</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="comment">##</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">    # @brief Constructeur d&#39;un vote.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">    # @param user Joueur qui vote (instance de User).</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">    # @param card Carte choisie par le joueur (instance de Card).</span></div>
+<div class="foldopen" id="foldopen00011" data-start="" data-end="">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html#abec42f113d890933499f25b746c0cb94">   11</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../db/d53/classvote_1_1Vote.html#abec42f113d890933499f25b746c0cb94">__init__</a>(self, user, card):</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee">   12</a></span>        self.<a class="code hl_variable" href="../../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee">user</a> = user</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html#a1ba164fa904a1faed51a0d935d7d2dad">   13</a></span>        self.<a class="code hl_variable" href="../../db/d53/classvote_1_1Vote.html#a1ba164fa904a1faed51a0d935d7d2dad">card</a> = card</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="comment">##</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">    # @brief Retourne le joueur ayant voté.</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">    # @return Instance de User.</span></div>
+<div class="foldopen" id="foldopen00018" data-start="" data-end="">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html#a3889c1508958818cb5b585a05f7d0ee4">   18</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../db/d53/classvote_1_1Vote.html#a3889c1508958818cb5b585a05f7d0ee4">get_user</a>(self):</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordflow">return</span> self.<a class="code hl_variable" href="../../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee">user</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="comment">##</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">    # @brief Retourne la carte choisie.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">    # @return Instance de Card.</span></div>
+<div class="foldopen" id="foldopen00024" data-start="" data-end="">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html#ac023077392a0b2d439bec9cfb1d584d9">   24</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../db/d53/classvote_1_1Vote.html#ac023077392a0b2d439bec9cfb1d584d9">get_card</a>(self):</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">return</span> self.<a class="code hl_variable" href="../../db/d53/classvote_1_1Vote.html#a1ba164fa904a1faed51a0d935d7d2dad">card</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">##</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="comment">    # @brief Représentation textuelle du vote.</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="comment">    # @return Chaîne décrivant le vote.</span></div>
+<div class="foldopen" id="foldopen00030" data-start="" data-end="">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../db/d53/classvote_1_1Vote.html#a623f0606a8d1b511950de06f594bb72e">   30</a></span>    <span class="keyword">def </span><a class="code hl_function" href="../../db/d53/classvote_1_1Vote.html#a623f0606a8d1b511950de06f594bb72e">__str__</a>(self):</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">return</span> f<span class="stringliteral">&quot;Vote(user={self.user.get_name()}, card={self.card.get_value()})&quot;</span></div>
 </div>
 </div>
-<div class="ttc" id="aclassvote_1_1Vote_html"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html">vote.Vote</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00005">vote.py:5</a></div></div>
-<div class="ttc" id="aclassvote_1_1Vote_html_a0b7fb75ec67f13546bbcd4aed3f45cee"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee">vote.Vote.user</a></div><div class="ttdeci">user</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00011">vote.py:11</a></div></div>
-<div class="ttc" id="aclassvote_1_1Vote_html_a1ba164fa904a1faed51a0d935d7d2dad"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html#a1ba164fa904a1faed51a0d935d7d2dad">vote.Vote.card</a></div><div class="ttdeci">card</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00012">vote.py:12</a></div></div>
-<div class="ttc" id="aclassvote_1_1Vote_html_aa1fac581041236831d274ecfae626b37"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html#aa1fac581041236831d274ecfae626b37">vote.Vote._init_</a></div><div class="ttdeci">_init_(self, user, card)</div><div class="ttdoc">Constructeur d'un vote.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00010">vote.py:10</a></div></div>
+<div class="ttc" id="aclassvote_1_1Vote_html"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html">vote.Vote</a></div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00006">vote.py:6</a></div></div>
+<div class="ttc" id="aclassvote_1_1Vote_html_a0b7fb75ec67f13546bbcd4aed3f45cee"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html#a0b7fb75ec67f13546bbcd4aed3f45cee">vote.Vote.user</a></div><div class="ttdeci">user</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00012">vote.py:12</a></div></div>
+<div class="ttc" id="aclassvote_1_1Vote_html_a1ba164fa904a1faed51a0d935d7d2dad"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html#a1ba164fa904a1faed51a0d935d7d2dad">vote.Vote.card</a></div><div class="ttdeci">card</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00013">vote.py:13</a></div></div>
+<div class="ttc" id="aclassvote_1_1Vote_html_a3889c1508958818cb5b585a05f7d0ee4"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html#a3889c1508958818cb5b585a05f7d0ee4">vote.Vote.get_user</a></div><div class="ttdeci">get_user(self)</div><div class="ttdoc">Retourne le joueur ayant voté.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00018">vote.py:18</a></div></div>
+<div class="ttc" id="aclassvote_1_1Vote_html_a623f0606a8d1b511950de06f594bb72e"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html#a623f0606a8d1b511950de06f594bb72e">vote.Vote.__str__</a></div><div class="ttdeci">__str__(self)</div><div class="ttdoc">Représentation textuelle du vote.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00030">vote.py:30</a></div></div>
+<div class="ttc" id="aclassvote_1_1Vote_html_abec42f113d890933499f25b746c0cb94"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html#abec42f113d890933499f25b746c0cb94">vote.Vote.__init__</a></div><div class="ttdeci">__init__(self, user, card)</div><div class="ttdoc">Constructeur d'un vote.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00011">vote.py:11</a></div></div>
+<div class="ttc" id="aclassvote_1_1Vote_html_ac023077392a0b2d439bec9cfb1d584d9"><div class="ttname"><a href="../../db/d53/classvote_1_1Vote.html#ac023077392a0b2d439bec9cfb1d584d9">vote.Vote.get_card</a></div><div class="ttdeci">get_card(self)</div><div class="ttdoc">Retourne la carte choisie.</div><div class="ttdef"><b>Definition</b> <a href="../../d3/d9e/vote_8py_source.html#l00024">vote.py:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Dec 1 2025 13:43:41 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Mon Dec 1 2025 13:44:01 for Planning Poker Project by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
