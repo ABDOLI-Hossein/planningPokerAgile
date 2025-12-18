@@ -1,0 +1,38 @@
+name: Génération Documentation Doxygen
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest Pillow
+
+    - name: Run Tests with Pytest
+      run: |
+        pytest tests/
+
+    - name: Install Doxygen
+      run: sudo apt-get install -y doxygen
+
+    - name: Generate Documentation
+      run: doxygen Doxyfile
+
+    # Optionnel : Vérifie que la doc est bien générée
+    - name: Check Docs
+      run: ls -R html/

@@ -1,0 +1,17 @@
+[
+    {
+        "id": "US1",
+        "title": "Créer une partie",
+        "description": "Choisir le nombre de joueurs et créer la partie."
+    },
+    {
+        "id": "US2",
+        "title": "Saisir les pseudos",
+        "description": "Entrer le pseudo de chaque joueur."
+    },
+    {
+        "id": "US3",
+        "title": "Mode distant",
+        "description": "Permettre à plusieurs joueurs de jouer à distance."
+    }
+]

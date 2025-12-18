@@ -1,0 +1,4 @@
+firebase-admin
+Pillow
+pytest
+firebase-admin
